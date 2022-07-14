@@ -1,42 +1,110 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 .flex {
     display: flex;
 }
 
-
+body {
+    background-color: black;
+}
 
 
 header {
     background-color: black;
     color: white;
-    height: 10vh;
+    height: 10%;
+    padding: 10px;
+    margin-bottom: 20px;
+
 
 }
 
 main {
-    height: 80vh;
+    height: 80%;
+    color: white;
+    padding: 0px 50px;
+    background-color: black;
 }
 
 footer {
-    background-color: gray;
-    height: 10vh;
+    margin-top: 20px;
+    background-color: #222222;
+    height: 10%;
 }
 
+.container {}
+
+
+
 .panel {
+
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    background-color: rgba(100, 100, 100, 0.5);
+    padding: 2px;
+}
+
+
+.user {
+    max-width: fit-content;
+    max-height: fit-content;
+    position: relative;
+    margin: 2px 2px;
+
+}
+
+.img {}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.right {
     justify-content: flex-end;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
 .button {
-    border: 1px solid white;
     margin-left: 15px;
+    padding: 4px 2px;
+    background-color: grey;
+    border-radius: 25px;
+}
+
+.icons-box {
+    max-width: fit-content;
+    max-height: fit-content;
+    color: white;
+    padding: 10px;
+}
+
+.icons {
+    align-self: center;
 
 }
 
-.fa-solid {
-    border: red;
+.icons-actions {}
+
+.leave {
+    color: red;
+    border: 1px solid red;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 10px;
+    background-color: #4A4A4A;
 }
